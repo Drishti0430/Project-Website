@@ -1,0 +1,7 @@
+Flask
+google.generativeai
+google
+gunicorn
+pygments
+pandas
+scikit-learn
