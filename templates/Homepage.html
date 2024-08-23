@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - CodroidHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(167, 189, 210);
+            
+            
+        }
+        .navbar {
+            background-color: #007BFF;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #dddddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .theme-section {
+            background-image:url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876010.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ADD8E6;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .theme-section h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .theme-section p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">About Developer 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/Drishti0430" target="_blank">Github Profile</a>
+                <a href="https://www.linkedin.com/in/drishti-gupta-297624254/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div> 
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+        <a href="https://www.codroidhub.com/">About CodroidHub</a>
+        <!-- <a href="problemstatement.html">Problem Statement 1</a>
+        <a href="problemstatement-2.html">Problem Statement 2</a>
+        <a href="problemstatement-3.html">Problem Statement 3</a> -->
+    </div>
+
+    <div class="theme-section">
+        <h1>AI-Enhanced Audience Behaviour Modelling and Movie Recommendation Engine</h1>
+        <p>"AI-Driven Insights for the Ultimate Movie-Watching Experience"</p>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to My Project</h1>
+        <p align ="left">The AI-Enhanced Audience Behavior Modeling and Movie Recommendation Engine is an advanced project focused on changing the way people find movies. 
+        Using artificial intelligence and deep learning,this project works to understand what viewers like and predict their preferences, 
+        providing personalized movie suggestions that match their interests.</p>
+        <div>
+            <button onclick="window.location.href=`/main`">Welcome</button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="mailto:contact@codroidhub.com">Contact Us</a> | 
+        <a href="https://github.com/CodroidHub" target="_blank">Github</a>
+    </footer>
+
+</body>
+</html>
