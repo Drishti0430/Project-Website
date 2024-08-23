@@ -135,7 +135,7 @@ def is_medical_query(query):
 
 @app.route('/chatbotScript')
 def chatbotScript():
-    with open('static/chatbot.py', 'r') as f:
+    with open('Static/chatbot.py', 'r') as f:
         code = f.read()
     lexer = PythonLexer()
     formatter = HtmlFormatter(full=True, linenos=True, style='friendly')
@@ -156,7 +156,7 @@ def chatbotScript():
 
 @app.route('/statistical')
 def statistical():
-    with open('static/statistical.py', 'r') as f:
+    with open('Static/statistical.py', 'r') as f:
         code = f.read()
     lexer = PythonLexer()
     formatter = HtmlFormatter(full=True, linenos=True, style='friendly')
